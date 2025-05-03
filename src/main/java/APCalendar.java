@@ -57,9 +57,17 @@ public class APCalendar
   public static int dayOfWeek(int month, int day, int year)
   {
     int firstDay = firstDayOfYear(year);
-    int Day = 0;
-    int totalDays = dayOfYear(month, day, year);
-    day = (totalDays - firstDay) % 7;
-    return Day;
+    int additionalDays = dayOfYear(month, day, year) - 1;
+
+    for(int d = 1; d <= additionalDays; d++)
+    {
+        firstDay++;
+
+        if(firstDay == 7)
+            firstDay = 0;
+    }
+
+    return weekday;
+}
   }
 }
