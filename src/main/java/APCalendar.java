@@ -68,6 +68,6 @@ public class APCalendar
     }
 
     return weekday;
-}
+
   }
 }
