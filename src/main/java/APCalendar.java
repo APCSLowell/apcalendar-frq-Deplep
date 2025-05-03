@@ -67,7 +67,7 @@ public class APCalendar
             firstDay = 0;
     }
 
-    return weekday;
+    return firstDay;
 
   }
 }
