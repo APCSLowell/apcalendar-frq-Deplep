@@ -60,3 +60,4 @@ public class APCalendar
     int additionalDays = dayOfYear(month, day, year) - 1;
     return (firstDay + additionalDays) % 7;
 }
+}
